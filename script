@@ -1,0 +1,86 @@
+		year.append(int(line.strip()[0:].split()[0]))
+		jday.append(int(line.strip()[0:].split()[1]))
+		month.append(int(line.strip()[0:].split()[2]))
+		day.append(int(line.strip()[0:].split()[3]))
+		#
+		hour.append(int(line.strip()[0:].split()[4]))
+		min.append(int(line.strip()[0:].split()[5]))
+		dt.append(float(line.strip()[0:].split()[6]))
+		zen.append(float(line.strip()[0:].split()[7]))
+		#	
+		dw_solar.append(float(line.strip()[0:].split()[8]))
+		dw_solar_qc.append(int(line.strip()[0:].split()[9]))
+		#
+		uw_solar.append(float(line.strip()[0:].split()[10]))
+		uw_solar_qc.append(int(line.strip()[0:].split()[11]))
+		#
+		direct_n.append(float(line.strip()[0:].split()[12]))
+		direct_n_qc.append(int(line.strip()[0:].split()[13]))
+		#
+		diffuse.append(float(line.strip()[0:].split()[14]))
+		diffuse_qc.append(int(line.strip()[0:].split()[15]))
+		#
+		dw_ir.append(float(line.strip()[0:].split()[16]))
+		dw_ir_qc.append(int(line.strip()[0:].split()[17]))
+		#
+		dw_casetemp.append(float(line.strip()[0:].split()[18]))
+		dw_casetemp_qc.append(int(line.strip()[0:].split()[19]))
+		#	
+		dw_dometemp.append(float(line.strip()[0:].split()[20]))
+		dw_dometemp_qc.append(int(line.strip()[0:].split()[21]))
+		#	
+		uw_ir.append(float(line.strip()[0:].split()[22]))
+		uw_ir_qc.append(int(line.strip()[0:].split()[23]))
+		#	
+		uw_casetemp.append(float(line.strip()[0:].split()[24]))
+		uw_casetemp_qc.append(int(line.strip()[0:].split()[25]))
+		#
+		uw_dometemp.append(float(line.strip()[0:].split()[26]))
+		uw_dometemp_qc.append(int(line.strip()[0:].split()[27]))
+		#	
+		uvb.append(float(line.strip()[0:].split()[28]))
+		uvb_qc.append(int(line.strip()[0:].split()[29]))
+		#	
+		par.append(float(line.strip()[0:].split()[30]))
+		par_qc.append(int(line.strip()[0:].split()[31]))
+		#	
+		netsolar.append(float(line.strip()[0:].split()[32]))
+		netsolar_qc.append(int(line.strip()[0:].split()[33]))
+		#		
+		netir.append(float(line.strip()[0:].split()[34]))
+		netir_qc.append(int(line.strip()[0:].split()[35]))
+		#	
+		totalnet.append(float(line.strip()[0:].split()[36]))
+		totalnet_qc.append(int(line.strip()[0:].split()[37]))
+		#	
+		temp.append(float(line.strip()[0:].split()[38]))
+		temp_qc.append(int(line.strip()[0:].split()[39]))
+		#	
+		rh.append(float(line.strip()[0:].split()[40]))
+		rh_qc.append(int(line.strip()[0:].split()[41]))
+		#	
+		windspd.append(float(line.strip()[0:].split()[42]))
+		windspd_qc.append(int(line.strip()[0:].split()[43]))
+		#	
+		winddir.append(float(line.strip()[0:].split()[44]))
+		winddir_qc.append(int(line.strip()[0:].split()[45]))
+		#	
+		pressure.append(float(line.strip()[0:].split()[46]))
+		pressure_qc.append(int(line.strip()[0:].split()[47]))
+
+
+
+return (year,jday,month,day, \
+		hour,minute,dt,zen, \
+		dw_solar,uw_solar,direct_n,diffuse, \
+		dw_ir,dw_casetemp,dw_dometemp, \
+		uw_ir, uw_casetemp, uw_dometemp, \
+		uvb,par,netsolar, netir, \
+		totalnet,temp,rh,windspd, \
+		winddir,pressure,\
+		dw_solar_qc,uw_solar_qc,direct_n_qc,diffuse_qc,\
+		dw_ir_qc,dw_casetemp_qc,dw_dometemp_qc, \
+		uw_ir_qc,uw_casetemp_qc,uw_dometemp_qc, \
+		uvb_qc,par_qc,netsolar_qc,netir_qc, \
+		totalnet_qc,temp_qc,rh_qc,windspd_qc, \
+		winddir_qc,pressure_qc)
